@@ -5,7 +5,7 @@ my_device = {
     "auth_username": "okan",
     "auth_password": "hollander",
     "auth_strict_key": False,
-    "port": 443
+    "port": 830
 }
 
 conn = NetconfDriver(**my_device)
