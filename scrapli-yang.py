@@ -1,4 +1,4 @@
-from scrapli_netconf.driver import NetconfScrape
+from scrapli_netconf.driver import NetconfDriver
 
 my_device = {
     "host": "192.168.2.11",
@@ -8,7 +8,7 @@ my_device = {
     "port": 830
 }
 
-conn = NetconfScrape(**my_device)
+conn = NetconfDriver(**my_device)
 conn.open()
 
 ospf_filter = """
