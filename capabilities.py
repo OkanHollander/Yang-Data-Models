@@ -1,4 +1,7 @@
 from ncclient import manager
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
 
 router = {
     "host": "192.168.2.11",
@@ -8,8 +11,8 @@ router = {
 }
 
 with manager.connect(**router, hostkey_verify=False) as m:
-    for capability in m.server_capabilities:
-        print("*" * 25)
-        print(' ')
-        print(capability)
-
+    # for capability in m.server_capabilities:
+        # print("*" * 25)
+        # print(' ')
+        # print(capability)
+    print("Hello World!")
